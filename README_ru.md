@@ -1,21 +1,21 @@
 ![banner](images/banner.png)
 
-A simple extension that allows you to disable the visibility of a window and show it on top of other windows
+Простое расширение, которое позволяет вам отключать видимость игрового окна
 
-## Legacy warning
-If you are using the IDE version **2024.14.2.213** and above, for the extension to work, you need to enable the `Use legacy DXGI_SWAP_EFFECT_DISCARD` option in the game settings `Windows -> Graphics`
+## Перед использованием
+Если вы используете версию IDE **2024.14.2.213** и выше, для работы расширения необходимо включить пункт `Use legacy DXGI_SWAP_EFFECT_DISCARD` в настройках игры `Windows -> Graphics`
 
 ![enable_special_option](images/enable_special_option.png)
 
-## Usage
+## Использование
 `window_set_transparent( enable ) -> undefined`  
-Allows you to **turn on** or **turn off** the visibility ( transparency ) of the window
+Позволяет **включать** или **выключать** видимость ( прозрачность ) окна
 
 `window_get_transparent( ) -> Bool`  
-Returns a bool value ( `true` / `false` ) depending on the current state of the window transparency mode
+Возвращает bool значение ( `true` / `false` ) в зависимости от текущего состояния режима прозрачности окна
 
 `window_set_topmost( enable ) -> undefined`  
-Allows you to **turn on** or **turn off** the visibility of a window on top of other windows ( Even if the window is out of focus, it will be displayed above all others )
+Позволяет включать или выключать видимость окна поверх других окон ( Даже если окно вне фокуса, оно будет отображаться выше всех остальных )
 
 `window_get_topmost( ) -> Bool`  
-Returns a bool value ( `true` / `false` ) depending on whether the visibility mode of the current window is enabled over other windows
+Возвращает bool значение ( `true` / `false` ) в зависимости от того, включен ли режим видимости текущего окна поверх других окон
