@@ -1,8 +1,8 @@
 ![banner](images/banner.png)
 
-A simple extension that allows you to disable the visibility of a window and show it on top of other windows
+Простое расширение, которое позволяет вам отключать видимость игрового окна и отображать его поверх других
 
-## Before usage
+## Перед использованием
 Если вы используете версию IDE **2024.14.2.213** и выше, для работы расширения необходимо включить пункт `Use legacy DXGI_SWAP_EFFECT_DISCARD` в настройках игры `Windows -> Graphics`
 
 ![enable_special_option](images/enable_special_option.png)
