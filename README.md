@@ -1,19 +1,21 @@
-## window_transparent
+![banner](images/banner.png)
+
 Простое расширение, которое позволяет отключить видимость окна и показывать его поверх других окон
 
 ## Перед использованием
 Если вы используете версию IDE **2024.14.2.213** и выше, для работы расширения необходимо включить пункт `Use legacy DXGI_SWAP_EFFECT_DISCARD` в настройках игры `Windows -> Graphics`
 
+![enable_special_option](images/enable_special_option.png)
+
 ## Использование
-`window_set_transparent( enable ) -> undefined`
+`window_set_transparent( enable ) -> undefined`  
+Позволяет **включать** или **выключать** видимость ( прозрачность ) окна
 
-Позволяет **включать** или **выключать** прозрачность окна
+`window_get_transparent( ) -> Bool`  
+Возвращает bool значение ( `true` / `false` ) в зависимости от текущего состояния режима прозрачности окна
 
-`window_get_transparent( ) -> Bool`
-Возвращает bool значение ( `true` / `false` ) в зависимости от текущего состояния прозрачности окна
-
-`window_set_topmost( enable ) -> undefined`
+`window_set_topmost( enable ) -> undefined`  
 Позволяет включать или выключать видимость окна поверх других окон ( Даже если окно вне фокуса, оно будет отображаться выше всех остальных )
 
-`window_get_topmost( ) -> Bool`
+`window_get_topmost( ) -> Bool`  
 Возвращает bool значение ( `true` / `false` ) в зависимости от того, включен ли режим видимости текущего окна поверх других окон
